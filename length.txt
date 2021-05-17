@@ -1,0 +1,10 @@
+LENGTH
+
+
+echo "enter the string"
+read str
+for i in "$str"
+do
+        echo "length"
+        echo ${#i}
+done

@@ -1,0 +1,31 @@
+ARITHEMATIC
+
+
+echo "enter the x"
+read x
+echo  "enter the y"
+read  y
+echo 1:addition
+echo 2:substraction
+echo 3:multiplication
+echo 4:division
+echo 5:mod_division
+echo "enter the z"
+read z
+if [ $z  == 1 ]
+then
+        echo addition ot two numbers is : `expr $x + $y`
+elif [ $z == 2 ]
+then
+        echo substraction of two numbers is: `expr $x - $y`
+elif [ $z == 3 ]
+then
+        echo multiplication of two numbers is: `expr $x \* $y`
+elif [ $z == 4 ]
+then
+        echo division of two numbers is : `expr $x / $y`
+elif [ $z == 5 ]
+then
+        echo modulus of two numbers is : `expr $x % $y`
+fi
+

@@ -1,0 +1,12 @@
+SALARY
+
+echo "enter basic salary"
+read sal
+ta=`expr 15 \* $sal / 100`
+da=`expr 2 \* $sal / 100`
+hra=`expr 10 \* $sal / 100`
+salary=`expr $sal + $ta + $da + $hra`
+it=`expr 5 \* $sal / 100`
+pf=`expr 10 \* $sal / 100`
+netsal=`expr $salary - $it - $pf`
+echo total salary is $netsal

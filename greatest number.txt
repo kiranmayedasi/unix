@@ -1,0 +1,18 @@
+GREATEST NUMBER
+
+clear
+echo "enter the number1"
+read num1
+echo "enter the number2"
+read num2
+echo "enter the number3"
+read num3
+if test $num1 -gt $num2 -a $num1 -gt $num3
+then
+        echo greatest number is $num1
+elif test $num2 -gt $num3
+then
+        echo greatest number is $num2
+else
+        echo greatest number is  $num3
+fi
